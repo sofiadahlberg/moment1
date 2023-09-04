@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestförRamverk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-warning">
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-secondary p-3 mb-5 ">
+                <div class="container-fluid ">
+                    <!--Menu and Links-->
+                    <a class="navbar-brand" href="index.html">Startsida</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tailwind.html">Tailwind</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="publication.html">Publicering</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container bg-body-secondary p-4 col-sm-12 col-md-12 col-lg-8">
+                <h1 class="display-4 text-center text-decoration-underline fw-bold">Bootstrap</h1>
+                <p class="lead">På den här sidan har jag använt mig av bootstrap. Jag har använt mig av CDN-länkarna och
+                    tyckte det var ett väldigt smidigt sätt med CDN än att ladda ner paket för att testa på ramverket.
+                    Det är ovant att göra all css i htmlfilen men det är mycket enkelt att använda.<br><button
+                        type="button" class="btn btn-dark"><a
+                            href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                            class="link fw-bold text-white">Länk till bootstrap </a></button>
+                </p>
+                <p class="lead">Nackdelen med bootstrap som jag kommit på hittills är att det inte finns så många färger
+                    att välja på i den vanliga versionen. Som jag förstått det fungerar det om man använder sig av SASS,
+                    men inte
+                    vanlig CSS. Det andra är att man känner sig väldigt låst, anledningen är kanske för att man går från
+                    att göra sin CSS fritt. Men det är ett bra hjälpmedel</p>
+            </div>
+            <div class="container p-4 col-sm-12 col-md-12 col-lg-8">
+                <h2 class="h2-display p-3">Bokade personer för att plocka svamp i skogen:</h2>
+                <table class="table table-dark text-white">
+                    <thead>
+                        <tr>
+                            <th scope="col">Antal</th>
+                            <th scope="col">Förnamn</th>
+                            <th scope="col">Efternamn</th>
+                            <th scope="col">Mobil</th>
+                            <th scope="col">Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Markus</td>
+                            <td>Otto</td>
+                            <td>070-222 22 22</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thörnqvist</td>
+                            <td>070-111 11 11</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Landon</td>
+                            <td>Bird</td>
+                            <td>070-000 00 00</td>
+                            <td>Kan ev bli 2 pers bara</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Lena</td>
+                            <td>Svens</td>
+                            <td>074-444 44 44</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Sanna</td>
+                            <td>Hej</td>
+                            <td>078- 888 88 88</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="h2-display p-3">Bokning för svampplock:</h2>
+
+            <form class="form mx-auto  bg-dark col-sm-12 col-lg-8 ">
+                <div class="form-group p-2 mx-auto col-sm-8 col-md-8 col-md-6">
+                    <label for="exampleFormControlInput1" class="h4 text-white mb-3">Förnamn:</label>
+                    <input type="fname" class="form-control bg-body-secondary fs-5 mb-3" id="exampleFormControlInput1"
+                        placeholder="Skriv ditt Förnamn">
+                    <label for="exampleFormControlInput1" class="h4 text-white mb-3">Efternamn:</label>
+                    <input type="lname" class="form-control bg-body-secondary fs-5" id="exampleFormControlInput1"
+                        placeholder="Skriv ditt Efternamn">
+                </div>
+
+                <div class="form-group text-white p-5 mx-auto col-sm-5 col-md-4 col-lg-4">
+                    <label for="exampleFormControlSelect2" class="h4">Välj antal:</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group text-white mx-auto p-4 text-center col-sm-8 col-md-6 col-lg-6">
+                    <label for="exampleFormControlTextarea1 p-3" class="h4">Viktig information:</label>
+                    <textarea class="form-control p-3 mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="container">
+
+                        <input type='checkbox' class="mb-3"> Uppgifterna som skrivits stämmer:
+                        </input>
+                    </div>
+                    <button type="button" class="btn btn-light mb-3">Skicka</button>
+                </div>
+    </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    </main>
+    </div>
+</body>
+
+</html>
